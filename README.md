@@ -6,3 +6,5 @@ The change in the pixels is so slight that it cannot be detected by a human eye.
 companies to watermark images they own to rights to. Adaptive steganography is where the algorithm or placement of information within the cover
 image changes depending on the contents of the image to make the hidden message less likely to be deciphered by an unintended audience.
 Each file in this repository tells the method of adaptive steganography used then whether it encodes or decodes the hidden message in the image.
+
+NOTE: the files are not organized in the folders they are supposed to be in, so there may be problems with the paths when opening files

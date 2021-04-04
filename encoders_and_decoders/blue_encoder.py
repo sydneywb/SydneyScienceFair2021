@@ -1,10 +1,11 @@
 from sf2021_functions import *
 from PIL import Image
 
-# this program embeds a hidden message in the blue-colored pixels of an image
+# This program embeds a hidden message in the blue-colored pixels of an image
 
 og_img = 'images_and_texts/blue/mountain_lake.png'
 hidden_message = 'images_and_texts/moby_dick.txt'
+stego_save = 'images_and_texts/blue/stego_blue_lake.png'
 
 with Image.open(og_img) as img:
 
@@ -30,5 +31,8 @@ with Image.open(og_img) as img:
 			f' so the message will be cut off after {text_indx} out of {len(text)} characters.')
 		print(f"Here are the last 12 characters embedded: {bin_to_text(text_bin[text_indx*8-96:text_indx*8])}")
 	
-	img.show()
-	img.save('images_and_texts/stego_blue_lake.png')
+	img.save(stego_save)
+
+
+
+	
